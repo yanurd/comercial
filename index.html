@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Caja | Airtek</title>
     <style>
       input:checked ~ .radio {
@@ -274,7 +281,7 @@
       </section>
 
       <section class="flex flex-col mx-9 my-2">
-        <form class="flex items-start space-x-4">
+        <form class="flex items-start space-x-4 bg-white w-fit px-4 py-3 rounded-lg">
           <div class="inline-flex flex-col w-fit">
             <span class="block m-auto">Forma de Pago</span>
             <div class="border border-gray-500 rounded-lg inline-flex">
@@ -353,11 +360,14 @@
           </label>
           <label class="inline-block" for="anadirPago">
             <span class="block">Pagar</span>
-            <input
-              class="block text-white bg-[#0066ff] rounded-lg inline-flex py-3 px-8"
-              type="button"
-              value="Agregar"
-            />
+            <div class="inline-flex bg-[#0066ff] rounded-lg items-center justify-center">
+              <i class="ml-5 fa-solid fa-arrow-down text-white"></i>
+              <input
+                class="block text-white inline-flex py-3 pr-8 pl-2"
+                type="button"
+                value="Agregar"
+              />
+            </div>
           </label>
         </form>
       </section>
